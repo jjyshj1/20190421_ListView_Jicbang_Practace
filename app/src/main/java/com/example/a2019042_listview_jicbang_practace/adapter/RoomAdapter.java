@@ -38,11 +38,13 @@ public class RoomAdapter extends ArrayAdapter<Room> {
         Room roomdata = mList.get(position);
         TextView depositTxt = row.findViewById(R.id.depositTxt);
         TextView floorTxt = row.findViewById(R.id.floorTxt);
+        TextView addressTxt = row.findViewById(R.id.addressTxt);
         TextView specTxt = row.findViewById(R.id.specTxt);
         TextView descriptionTxt = row.findViewById(R.id.descriptionTxt);
 
         depositTxt.setText(String.format("%d / %d",roomdata.deposit,roomdata.monthpay));
         floorTxt.setText(String.format("%d층",roomdata.floor));
+        addressTxt.setText(roomdata.address);
         specTxt.setText(roomdata.spec);
         descriptionTxt.setText(roomdata.description);
 

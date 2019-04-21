@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -11,35 +13,49 @@
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:src="@mipmap/ic_launcher"/>
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="38dp"
+        android:background="#2070B5"
         android:text="방주인에게 매물정보와 거래상태를 확인받은 매물입니다."
+        android:textColor="#ffffff"
         android:textSize="15sp"
-        android:layout_marginLeft="15dp"/>
+        android:gravity="center"
+        android:textStyle="bold"/>
+
     <LinearLayout
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="37dp"
+            android:gravity="center"
             android:text="확인매물 190403"
-            android:textSize="15dp"
-            android:textAlignment="center"/>
+            android:textAlignment="center"
+            android:textSize="15dp" />
+
         <TextView
+            android:id="@+id/mdepositTxt"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="53dp"
+            android:gravity="center"
             android:text="월세 500/40"
+            android:textAlignment="center"
             android:textSize="30dp"
-            android:textAlignment="center"/>
+            android:textStyle="bold"/>
+
         <TextView
+            android:id="@+id/mspecTxt"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="31dp"
             android:text="스펙"
+            android:textAlignment="center"
             android:textSize="15dp"
-            android:textAlignment="center"/>
+            android:gravity="center"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -56,12 +72,14 @@
                 android:src="@mipmap/ic_launcher"/>
 
             <ImageView
+                android:id="@+id/mfloorBtn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:src="@mipmap/ic_launcher"/>
 
             <ImageView
+                android:id="@+id/mmanagementCost"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -70,21 +88,25 @@
         </LinearLayout>
 
         <TextView
+            android:id="@+id/mdescriptionTxt"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="51dp"
+            android:gravity="center"
             android:text="부연설명"
             android:textAlignment="center"
-            android:textSize="20dp"/>
+            android:textSize="20dp" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <Button
+                android:id="@+id/msnsBtn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="문자상담"
                 android:textSize="20dp"/>
             <Button
+                android:id="@+id/mcallBtn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -99,3 +121,5 @@
 
 
 </LinearLayout>
+
+</layout>
